@@ -1,34 +1,40 @@
-#include "racional.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+
+typedef struct complexo Complexo;
 
 //arquivo de cabeçalho números complexos.
 
-Racional *  criaComplexoFormaAlgebrica(float a, float b);
+Complexo* criaComplexo(int numerador, int demoninador);
 
-Racional* criaComplexoFormaPolar (float a, float b);
+Complexo* criaComplexoFormaAlgebrica(float a, float b);
 
-void liberaComplexo(Racional* z);
+Complexo* criaComplexoFormaPolar (float a, float b);
 
-void formaAlgebrica(Racional* z, float* a, float* b);
+void liberaComplexo(Complexo* z);
 
-void formaPolar(Racional* z, float* a, float* b);
+void formaAlgebrica(Complexo* z, float* a, float* b);
 
-int testeReal(Racional * z);
+void formaPolar(Complexo* z, float* a, float* b);
 
-int testeImaginario(Racional * z);
+int testeReal(Complexo * z);
 
-int testeZero(Racional * z);
+int testeImaginario(Complexo * z);
 
-Racional* addComplexo(Racional* z1, Racional* z2);
+int testeZero(Complexo * z);
 
-Racional* subComplexo(Racional* z1, Racional* z2);
+Complexo* addComplexo(Complexo* z1, Complexo* z2);
 
-Racional* multComplexo(Racional* z1, Racional* z2);
+Complexo* subComplexo(Complexo* z1, Complexo* z2);
 
-Racional* divComplexo(Racional* z1, Racional* z2);
+Complexo* multComplexo(Complexo* z1, Complexo* z2);
 
-Racional* conjugadoComplexo(Racional* z);
+Complexo* divComplexo(Complexo* z1, Complexo* z2);
 
-Racional* potenciaComplexo(Racional* z, int n);
+Complexo* conjugadoComplexo(Complexo* z);
 
-Racional* raizComplexo(Racional* z, int n);
+Complexo* potenciaComplexo(Complexo* z, int n);
+
+Complexo* raizComplexo(Complexo* z, int n);
