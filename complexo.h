@@ -19,9 +19,9 @@ void formaAlgebrica(Complexo* z, float* a, float* b);
 
 void formaPolar(Complexo* z, float* a, float* b);
 
-int testeReal(Complexo * z);
+int testeReal(Complexo* z);
 
-int testeImaginario(Complexo * z);
+int testeImaginario(Complexo* z);
 
 int testeZero(Complexo * z);
 
