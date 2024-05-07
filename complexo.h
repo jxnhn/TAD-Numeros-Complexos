@@ -29,6 +29,8 @@ Complexo* addComplexo(Complexo* z1, Complexo* z2);
 
 Complexo* subComplexo(Complexo* z1, Complexo* z2);
 
+//joao 
+
 Complexo* multComplexo(Complexo* z1, Complexo* z2);
 
 Complexo* divComplexo(Complexo* z1, Complexo* z2);

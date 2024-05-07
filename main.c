@@ -68,4 +68,16 @@ int main (int argc, char *argv[]) {
 
 
     return 0;
+
+
+    //Criando +2 números complexos pra usar as funções: DivComplexo, MultComplexo, ConjugadoComplexo, PotenciaComplexo, RaizComplexo
+
+    Complexo* z4 = criaComplexoFormaAlgebrica(4.0, 7.0);
+    Complexo* z5 = criaComplexoFormaAlgebrica(5.0, 2.0);
+
+    multComplexo(z4, z5);
+    divComplexo(z4, z5);
+    conjugadoComplexo(z5);
+    potenciaComplexo(z4, 2);
+    raizComplexoz(z5, 2);
 }
